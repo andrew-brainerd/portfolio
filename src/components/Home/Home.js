@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <h1>
-        {'Andrew J. Brainerd'.split(' ').map((word, w) =>
+        {'Andrew J Brainerd'.split(' ').map((word, w) =>
           <div key={w} className={styles.word}>{word}</div>
         )}
       </h1>

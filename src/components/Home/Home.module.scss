@@ -12,12 +12,12 @@
   .word {
     cursor: default;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 15px;
     transition: 0.3s all ease-in-out;
     user-select: none;
 
     &:hover {
-      color: $green-1;
+      color: $yellow-1;
       transform: translateY(-10px);
     }
   }

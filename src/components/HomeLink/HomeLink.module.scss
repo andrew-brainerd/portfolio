@@ -17,6 +17,13 @@ $mobileIconSize: 75px;
   padding: 15px 20px;
   transition: 0.5s all;
 
+  svg {
+    fill: $gray-30;
+    height: $iconSize;
+    transition: 0.5s all;
+    width: $iconSize;
+  }
+
   &:hover {
     border-radius: 10%;
     transform: scale(1.1);
@@ -24,13 +31,6 @@ $mobileIconSize: 75px;
     svg {
       fill: $gray-2-5;
     }
-  }
-
-  svg {
-    fill: $gray-30;
-    height: $iconSize;
-    transition: 0.5s all;
-    width: $iconSize;
   }
 }
 
