@@ -22,7 +22,7 @@ const Attribution = () => {
       <h2>Icons Made By</h2>
       {iconCreators.map(({ authorLink, authorName }) => {
         return (
-          <div className={styles.author}>
+          <div key={authorName} className={styles.author}>
             <a href={authorLink} title={authorName}>{authorName}</a> from
             <a href='https://www.flaticon.com/' title='Flaticon'>www.flaticon.com</a>
           </div>
