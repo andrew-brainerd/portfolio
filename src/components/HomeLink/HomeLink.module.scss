@@ -1,5 +1,9 @@
 @import '../../styles/colors.scss';
 @import '../../styles/mixins.scss';
+@import '../../styles/sizing.scss';
+
+$iconSize: 100px;
+$mobileIconSize: 75px;
 
 .homeLink {
   @include boxShadow();
@@ -24,8 +28,19 @@
 
   svg {
     fill: $gray-30;
-    height: 100px;
+    height: $iconSize;
     transition: 0.5s all;
-    width: 100px;
+    width: $iconSize;
+  }
+}
+
+@media screen and (max-width: $mobileWidth) {
+  .homeLink {
+    margin: 15px;
+
+    svg {
+      height: $mobileIconSize;
+      width: $mobileIconSize;
+    }
   }
 }
