@@ -8,7 +8,11 @@ import styles from './Home.module.scss';
 const Home = () => {
   return (
     <div className={styles.home}>
-      <h1>Andrew J. Brainerd</h1>
+      <h1>
+        {'Andrew J. Brainerd'.split(' ').map((word, w) =>
+          <div key={w} className={styles.word}>{word}</div>
+        )}
+      </h1>
       <div className={styles.links}>
         <HomeLink path={'https://github.com/andrew-brainerd'}>
           <GitHubIcon />

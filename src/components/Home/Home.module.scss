@@ -1,11 +1,26 @@
+@import '../../styles/colors.scss';
 @import '../../styles/sizing.scss';
 
 .home {
+  color: $blue-1;
   font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
   font-size: 2em;
   position: relative;
   text-align: center;
   top: 20%;
+
+  .word {
+    cursor: default;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.3s all ease-in-out;
+    user-select: none;
+
+    &:hover {
+      color: $green-1;
+      transform: translateY(-10px);
+    }
+  }
 
   .links {
     display: flex;
