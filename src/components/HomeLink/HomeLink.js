@@ -1,19 +1,28 @@
 import React from 'react';
-import { string } from 'prop-types';
-import { Link } from 'react-router-dom';
+import { node, bool, string } from 'prop-types';
 import styles from './HomeLink.module.scss';
 
-const HomeLink = ({ text, path }) => {
+const HomeLink = ({ children, text, path, openNewTab }) => {
   return (
-    <Link className={styles.homeLink} to={path}>
-      {text || path}
-    </Link>
+    <a
+      className={styles.homeLink}
+      href={path}
+      target={openNewTab ? '_blank' : '_self'}
+    >
+      {children || text || path}
+    </a>
   );
 };
 
 HomeLink.propTypes = {
+  children: node,
+  openNewTab: bool,
   text: string,
   path: string.isRequired
+};
+
+HomeLink.defaultProps = {
+  openNewTab: true
 };
 
 export default HomeLink;

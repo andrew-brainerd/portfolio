@@ -1,0 +1,31 @@
+@import '../../styles/colors.scss';
+@import '../../styles/mixins.scss';
+
+.homeLink {
+  @include boxShadow();
+
+  align-items: center;
+  background: $gray-80;
+  border-radius: 15%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 15px 20px;
+  transition: 0.5s all;
+
+  &:hover {
+    border-radius: 10%;
+    transform: scale(1.1);
+
+    svg {
+      fill: $gray-2-5;
+    }
+  }
+
+  svg {
+    fill: $gray-30;
+    height: 100px;
+    transition: 0.5s all;
+    width: 100px;
+  }
+}
