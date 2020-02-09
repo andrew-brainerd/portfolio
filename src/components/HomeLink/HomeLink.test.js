@@ -8,7 +8,7 @@ describe('HomeLink Component', () => {
   beforeEach(() => {
     props = {
       path: 'https://google.com'
-    }
+    };
   });
 
   const render = () => shallow(<HomeLink {...props} />);

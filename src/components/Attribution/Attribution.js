@@ -29,7 +29,7 @@ const Attribution = () => {
         );
       })}
     </div>
-  )
+  );
 };
 
 export default Attribution;
