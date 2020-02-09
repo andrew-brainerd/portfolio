@@ -2,6 +2,10 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrew-brainerd/portfolio"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -30,7 +34,7 @@
     "lint:js": "eslint src/",
     "lint:css": "stylelint --config stylelint.json **/*.scss",
     "lint": "npm-run-all lint:*",
-    "coverage": "jest --coverage --no-cache --coverageDirectory coverage --watchAll=false",
+    "coverage": "npm test -- --coverage --coverageDirectory coverage --watchAll=false",
     "verify": "npm-run-all lint test"
   },
   "eslintConfig": {
@@ -59,8 +63,7 @@
       "!src/index.js",
       "!src/serviceWorker.js",
       "!coverage/**"
-    ],
-    "setupFilesAfterEnv": ["./src/setupTests.js"]
+    ]
   },
   "babel": {
     "presets": [
