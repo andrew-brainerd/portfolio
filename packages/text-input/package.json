@@ -1,0 +1,13 @@
+{
+  "name": "@brainerd/text-input",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "TextInput Component",
+  "main": "index.js",
+  "repository": "https://github.com/andrew-brainerd/portfolio",
+  "author": {
+    "name": "Andrew Brainerd",
+    "email": "drwb333@gmail.com"
+  }
+}
