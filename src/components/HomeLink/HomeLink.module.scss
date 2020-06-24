@@ -7,6 +7,7 @@ $mobileIconSize: 75px;
 
 .homeLink {
   @include boxShadow();
+  @include fadeInAnimation();
 
   align-items: center;
   background: $gray-80;
