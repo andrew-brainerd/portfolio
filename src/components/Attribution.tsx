@@ -1,5 +1,4 @@
-import React from 'react';
-import styles from './Attribution.module.scss';
+import styles from 'styles/components/Attribution.module.scss';
 
 const iconCreators = [
   {
@@ -23,8 +22,13 @@ const Attribution = () => {
       {iconCreators.map(({ authorLink, authorName }) => {
         return (
           <div key={authorName} className={styles.author}>
-            <a href={authorLink} title={authorName}>{authorName}</a> from
-            <a href='https://www.flaticon.com/' title='Flaticon'>www.flaticon.com</a>
+            <a href={authorLink} title={authorName}>
+              {authorName}
+            </a>{' '}
+            from
+            <a href="https://www.flaticon.com/" title="Flaticon">
+              www.flaticon.com
+            </a>
           </div>
         );
       })}

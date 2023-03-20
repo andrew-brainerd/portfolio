@@ -1,0 +1,26 @@
+{
+  "response": {
+    "players": [
+      {
+        "steamid": "76561197998637344",
+        "communityvisibilitystate": 3,
+        "profilestate": 1,
+        "personaname": "Sp1d3rM0nk3y",
+        "profileurl": "https://steamcommunity.com/id/drwb333/",
+        "avatar": "https://avatars.akamai.steamstatic.com/ac74a18df83bcde5ca3f5990803d69b7b1adb557.jpg",
+        "avatarmedium": "https://avatars.akamai.steamstatic.com/ac74a18df83bcde5ca3f5990803d69b7b1adb557_medium.jpg",
+        "avatarfull": "https://avatars.akamai.steamstatic.com/ac74a18df83bcde5ca3f5990803d69b7b1adb557_full.jpg",
+        "avatarhash": "ac74a18df83bcde5ca3f5990803d69b7b1adb557",
+        "lastlogoff": 1679263532,
+        "personastate": 1,
+        "realname": "Andrew Brainerd",
+        "primaryclanid": "103582791429521408",
+        "timecreated": 1210849749,
+        "personastateflags": 0,
+        "loccountrycode": "US",
+        "locstatecode": "MI",
+        "loccityid": 2008
+      }
+    ]
+  }
+}
