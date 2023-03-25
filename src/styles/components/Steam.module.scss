@@ -2,9 +2,12 @@
   align-items: center;
   display: flex;
   margin-top: 10px;
-  
-  img {
+
+  > div {
     margin: 0 15px;
+  }
+
+  img {
     width: 50px;
   }
 }
