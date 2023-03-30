@@ -1,12 +1,11 @@
-// import Home from 'components/Home';
-import Steam from 'components/Steam';
+import Home from 'components/Home';
 
 import styles from 'styles/components/App.module.scss';
 
 
 const App = () => (
   <div className={styles.app}>
-    <Steam />
+    <Home />
   </div>
 );
 
